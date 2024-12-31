@@ -1,0 +1,105 @@
+{
+    "name": "循迹小车",
+    "target": "Release",
+    "toolchain": "Keil_C51",
+    "toolchainLocation": "D:\\Keil_v5\\C51",
+    "toolchainCfgFile": "c:\\Users\\L1076\\.vscode\\extensions\\cl.eide-3.20.1\\res\\data\\models\\win32/8051.keil.model.json",
+    "buildMode": "normal|multhread",
+    "showRepathOnLog": true,
+    "threadNum": 16,
+    "rootDir": "e:\\单片机\\循迹小车",
+    "dumpPath": "build\\Release",
+    "outDir": "build\\Release",
+    "incDirs": [
+        "d:/黑马STC8/day01/02_资料/STC8G-STC8H-LIB-DEMO-CODE_2023.07.17_优化版/库函数",
+        "src/Lib",
+        "src/driver",
+        "D:/Keil_v5/C51/INC"
+    ],
+    "libDirs": [
+        "d:/黑马STC8/day01/02_资料/STC8G-STC8H-LIB-DEMO-CODE_2023.07.17_优化版/库函数"
+    ],
+    "defines": [
+        "__UVISION_VERSION=526"
+    ],
+    "sourceList": [
+        "src/Lib/ADC.c",
+        "src/Lib/GPIO.c",
+        "src/Lib/NVIC.c",
+        "src/Lib/STC8H_PWM.c",
+        "src/Lib/UART.c",
+        "src/Lib/UART_Isr.c",
+        "src/OS/Conf_tny.A51",
+        "src/driver/Battery.c",
+        "src/driver/Bluetooth.c",
+        "src/driver/Buzzer.c",
+        "src/driver/Key.c",
+        "src/driver/Light.c",
+        "src/driver/Motors.c",
+        "src/driver/Track.c",
+        "src/driver/Ultrasonic.c",
+        "src/main.c"
+    ],
+    "sourceParams": {},
+    "sourceParamsMtime": 1732983766000,
+    "options": {
+        "version": 2,
+        "beforeBuildTasks": [],
+        "afterBuildTasks": [],
+        "global": {
+            "ram-mode": "COMPACT",
+            "rom-mode": "LARGE"
+        },
+        "c/cpp-compiler": {
+            "optimization-type": "SPEED",
+            "optimization-level": "level-8",
+            "optimization": "8,SPEED"
+        },
+        "asm-compiler": {},
+        "linker": {
+            "remove-unused": true,
+            "output-format": "elf",
+            "use-RTX": "RTX-Tiny",
+            "disable-warnings": "15,16"
+        }
+    },
+    "env": {
+        "workspaceFolder": "e:\\单片机\\循迹小车",
+        "workspaceFolderBasename": "循迹小车",
+        "OutDir": "e:\\单片机\\循迹小车\\build\\Release",
+        "OutDirRoot": "build",
+        "OutDirBase": "build\\Release",
+        "ProjectName": "循迹小车",
+        "ConfigName": "Release",
+        "ProjectRoot": "e:\\单片机\\循迹小车",
+        "ExecutableName": "e:\\单片机\\循迹小车\\build\\Release\\循迹小车",
+        "ChipPackDir": "",
+        "ChipName": "",
+        "SYS_Platform": "win32",
+        "SYS_DirSep": "\\",
+        "SYS_DirSeparator": "\\",
+        "SYS_PathSep": ";",
+        "SYS_PathSeparator": ";",
+        "SYS_EOL": "\r\n",
+        "EIDE_BUILDER_DIR": "c:\\Users\\L1076\\.vscode\\extensions\\cl.eide-3.20.1\\res\\tools\\win32\\unify_builder",
+        "EIDE_BINARIES_VER": "12.0.1",
+        "EIDE_MSYS": "C:\\Users\\L1076\\.eide\\bin\\builder\\msys\\bin",
+        "EIDE_TOOL_GCC_ARM": "C:\\Users\\L1076\\.eide\\tools\\gcc_arm\\bin",
+        "EIDE_TOOL_JLINK": "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.2.8-hotspot\\bin",
+        "EIDE_TOOL_OPENOCD": "C:\\Users\\L1076\\.eide\\tools\\openocd_7a1adfbec_mingw32\\bin",
+        "EIDE_TOOL_OPENOCD_7A1ADFBEC_MINGW32": "C:\\Users\\L1076\\.eide\\tools\\openocd_7a1adfbec_mingw32\\bin",
+        "EIDE_TOOL_SDCC": "C:\\Users\\L1076\\.eide\\tools\\sdcc\\bin",
+        "EIDE_TOOL_ST_CUBE_PROGRAMER": "C:\\Users\\L1076\\.eide\\tools\\st_cube_programer\\bin",
+        "ToolchainRoot": "D:\\Keil_v5\\C51"
+    },
+    "sysPaths": [],
+    "sha": {
+        "c/cpp-defines": "b5babb9cacba6494fa0692e84c1cf8da",
+        "beforeBuildTasks": "d751713988987e9331980363e24189ce",
+        "afterBuildTasks": "d751713988987e9331980363e24189ce",
+        "global": "4c646d9270d219ff4733ffea49cf09de",
+        "c/cpp-compiler": "d6401cb3a45dab99a8d0301dd2b94e32",
+        "asm-compiler": "99914b932bd37a50b983c5e7c90ae93b",
+        "linker": "ba5acb93441c76366e4cc390d65a143c"
+    }
+}

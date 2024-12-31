@@ -1,0 +1,1574 @@
+LX51 LINKER/LOCATER V4.66.100.0                                                         12/31/2024  15:50:56  PAGE 1
+
+
+LX51 LINKER/LOCATER V4.66.100.0, INVOKED BY:
+D:\KEIL_V5\C51\BIN\LX51.EXE .\BUILD\RELEASE\.OBJ\SRC\LIB\ADC.O, .\BUILD\RELEASE\.OBJ\SRC\LIB\GPIO.O, .\BUILD\RELEASE\.OB
+>> J\SRC\LIB\NVIC.O, .\BUILD\RELEASE\.OBJ\SRC\LIB\STC8H_PWM.O, .\BUILD\RELEASE\.OBJ\SRC\LIB\UART.O, .\BUILD\RELEASE\.OBJ
+>> \SRC\LIB\UART_ISR.O, .\BUILD\RELEASE\.OBJ\SRC\OS\CONF_TNY.O, .\BUILD\RELEASE\.OBJ\SRC\DRIVER\BATTERY.O, .\BUILD\RELEA
+>> SE\.OBJ\SRC\DRIVER\BLUETOOTH.O, .\BUILD\RELEASE\.OBJ\SRC\DRIVER\BUZZER.O, .\BUILD\RELEASE\.OBJ\SRC\DRIVER\KEY.O, .\BU
+>> ILD\RELEASE\.OBJ\SRC\DRIVER\LIGHT.O, .\BUILD\RELEASE\.OBJ\SRC\DRIVER\MOTORS.O, .\BUILD\RELEASE\.OBJ\SRC\DRIVER\TRACK.
+>> O, .\BUILD\RELEASE\.OBJ\SRC\DRIVER\ULTRASONIC.O, .\BUILD\RELEASE\.OBJ\SRC\MAIN.O TO .\BUILD\RELEASE\循迹小车 PRINT (.
+>> \build\Release\循迹小车.map) RTX51TINY REMOVEUNUSED DISABLEWARNING (15, 16)
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: COMPACT WITH FLOATING POINT ARITHMETIC
+
+
+INPUT MODULES INCLUDED:
+  .\BUILD\RELEASE\.OBJ\SRC\LIB\ADC.O (ADC)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  .\BUILD\RELEASE\.OBJ\SRC\LIB\GPIO.O (GPIO)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  .\BUILD\RELEASE\.OBJ\SRC\LIB\NVIC.O (NVIC)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  .\BUILD\RELEASE\.OBJ\SRC\LIB\STC8H_PWM.O (STC8H_PWM)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  .\BUILD\RELEASE\.OBJ\SRC\LIB\UART.O (UART)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  .\BUILD\RELEASE\.OBJ\SRC\LIB\UART_ISR.O (UART_ISR)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  .\BUILD\RELEASE\.OBJ\SRC\OS\CONF_TNY.O (?RTX51_TINY_KERNAL)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  .\BUILD\RELEASE\.OBJ\SRC\DRIVER\BATTERY.O (BATTERY)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  .\BUILD\RELEASE\.OBJ\SRC\DRIVER\BLUETOOTH.O (BLUETOOTH)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  .\BUILD\RELEASE\.OBJ\SRC\DRIVER\BUZZER.O (BUZZER)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  .\BUILD\RELEASE\.OBJ\SRC\DRIVER\KEY.O (KEY)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  .\BUILD\RELEASE\.OBJ\SRC\DRIVER\LIGHT.O (LIGHT)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  .\BUILD\RELEASE\.OBJ\SRC\DRIVER\MOTORS.O (MOTORS)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  .\BUILD\RELEASE\.OBJ\SRC\DRIVER\TRACK.O (TRACK)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  .\BUILD\RELEASE\.OBJ\SRC\DRIVER\ULTRASONIC.O (ULTRASONIC)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  .\BUILD\RELEASE\.OBJ\SRC\MAIN.O (MAIN)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  D:\KEIL_V5\C51\LIB\RTX51TNY.LIB (?RTX51_TINY_OS_CREATE)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\RTX51TNY.LIB (?RTX51_TINY_OS_DELETE)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\RTX51TNY.LIB (?RTX51_TINY_OS_WAIT)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51FPC.LIB (?C?FPMUL)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51FPC.LIB (?C?FPDIV)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51FPC.LIB (?C?FPCMP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51FPC.LIB (?C?FCAST)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51FPC.LIB (?C?CASTF)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51FPC.LIB (PRINTF)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51FPC.LIB (?C?FPGETOPN)
+LX51 LINKER/LOCATER V4.66.100.0                                                       12/31/2024  15:50:56  PAGE 2
+
+
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51FPC.LIB (?C?FPROUND)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51FPC.LIB (?C?FPCONVERT)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51FPC.LIB (?C?FPADD)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51FPC.LIB (?C?FTNPWR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51C.LIB (?C_STARTUP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51C.LIB (?C?COPY)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51C.LIB (?C?CLDPTR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51C.LIB (?C?CLDOPTR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51C.LIB (?C?CSTPTR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51C.LIB (?C?IMUL)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51C.LIB (?C?SIDIV)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51C.LIB (?C?ILDPTR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51C.LIB (?C?ILDOPTR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51C.LIB (?C?LMUL)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51C.LIB (?C?ULDIV)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51C.LIB (?C?SLDIV)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51C.LIB (?C?LNEG)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51C.LIB (?C?ULCMP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51C.LIB (?C?ULSHR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51C.LIB (?C?LLDOPTR0)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51C.LIB (?C?LSTPDATA)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51C.LIB (?C?LSTKPDATA)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51C.LIB (?C?PLDIPDATA)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51C.LIB (?C?PSTPDATA)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51C.LIB (?C?CCASE)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51C.LIB (?C?ICALL)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51C.LIB (?C_INIT)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51C.LIB (?C?UIDIV)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51C.LIB (?C?LLDIDATA0)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51C.LIB (?C?LLDXDATA0)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51C.LIB (?C?LLDPDATA0)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL_V5\C51\LIB\C51C.LIB (?C?LLDCODE0)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+LX51 LINKER/LOCATER V4.66.100.0                                                       12/31/2024  15:50:56  PAGE 3
+
+
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  .\BUILD\RELEASE\循迹小车 (ADC)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+C:000000H   C:000000H   C:00FFFFH   002869H   CODE
+X:000000H   X:000000H   X:0000FFH   000092H   PDATA
+X:000000H   X:000000H   X:00FFFFH   0002C0H   XDATA
+I:000000H   I:000000H   I:00007FH   000013H   DATA
+I:000000H   I:000000H   I:0000FFH   000019H   IDATA
+I:000020H.0 I:000020H.0 I:00002FH.7 000001H.2 BIT
+C:000000H   C:000000H   C:00FFFFH   000006H   CONST
+
+
+TASK TABLE OF MODULE:  .\BUILD\RELEASE\循迹小车 (ADC)
+
+TASKID   PRIORITY   REG-BANK   SEGMENT NAME (OFFSET)
+====================================================
+0        0          0          ?PR?TASK_MAIN?MAIN (00H)
+1        0          0          ?PR?TASK_LED?MAIN (00H)
+2        0          0          ?PR?TASK_KEY?MAIN (00H)
+3        0          0          ?PR?TASK_ULTRASONIC?MAIN (00H)
+4        0          0          ?PR?TASK_BUZZER?MAIN (00H)
+5        0          0          ?PR?TASK_TRACK?MAIN (00H)
+7        0          0          ?PR?TASK_BT?MAIN (00H)
+
+
+
+MEMORY MAP OF MODULE:  .\BUILD\RELEASE\循迹小车 (ADC)
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   00000DH   000006H   ---    OFFS..   DATA           ?DA??RTX51_TINY_KERNAL?0
+00000EH   000012H   000005H   BYTE   UNIT     DATA           _DATA_GROUP_
+000013H   00001AH   000008H   BYTE   UNIT     IDATA          ?RTX?TASKSP?S
+00001BH.0 00001FH.7 000005H.0 ---    ---      **GAP**
+000020H.0 000021H.0 000001H.1 BIT    UNIT     BIT            _BIT_GROUP_
+000021H.1 000021H.1 000000H.1 BIT    UNIT     BIT            ?RTX?BITS
+000021H.2 000021H   000000H.6 ---    ---      **GAP**
+000022H   000031H   000010H   BYTE   UNIT     IDATA          ?RTX?TASKSTATE?S
+000032H   000032H   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
+000003H   00000AH   000008H   BYTE   UNIT     CODE           ?PR?_SPEED2DUTY?MOTORS
+00000BH   00000DH   000003H   ---    OFFS..   CODE           ?CO??RTX51_TINY_KERNAL?1
+00000EH   000021H   000014H   BYTE   UNIT     CODE           ?PR?KEY_INIT?KEY
+000022H   000022H   000001H   ---    ---      **GAP**
+000023H   000025H   000003H   BYTE   OFFS..   CODE           ?UART_ISR?00023
+000026H   000042H   00001DH   BYTE   UNIT     CODE           ?PR?SYS_CONFIG?MAIN
+000043H   000045H   000003H   BYTE   OFFS..   CODE           ?UART_ISR?00043
+000046H   00008AH   000045H   BYTE   UNIT     CODE           ?PR?_MOTORS_FORWARD?MOTORS
+00008BH   00008DH   000003H   BYTE   OFFS..   CODE           ?UART_ISR?0008B
+00008EH   000092H   000005H   BYTE   UNIT     CODE           ?PR?_PUTCHAR?UART
+000093H   000095H   000003H   BYTE   OFFS..   CODE           ?UART_ISR?00093
+000096H   000A7AH   0009E5H   BYTE   UNIT     CODE           ?C?LIB_CODE
+000A7BH   00106AH   0005F0H   BYTE   UNIT     CODE           ?PR?_UART_CONFIGURATION?UART
+00106BH   0014D8H   00046EH   BYTE   UNIT     CODE           ?PR?PRINTF?PRINTF
+0014D9H   0018EAH   000412H   BYTE   UNIT     CODE           ?PR?_PWM_CONFIGURATION?STC8H_PWM
+0018EBH   001BCDH   0002E3H   BYTE   UNIT     CODE           ?RTX?CODE
+LX51 LINKER/LOCATER V4.66.100.0                                                       12/31/2024  15:50:56  PAGE 4
+
+
+001BCEH   001E21H   000254H   BYTE   UNIT     CODE           ?PR?_GPIO_INILIZE?GPIO
+001E22H   001FA1H   000180H   BYTE   UNIT     CODE           ?PR?MOTORS_PWM_CONFIG?MOTORS
+001FA2H   00202DH   00008CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+00202EH   0020ABH   00007EH   BYTE   UNIT     CODE           ?PR?TASK_TRACK?MAIN
+0020ACH   002116H   00006BH   BYTE   UNIT     CODE           ?PR?_PWM_CONFIG?BUZZER
+002117H   002181H   00006BH   BYTE   UNIT     CODE           ?PR?TASK_ULTRASONIC?MAIN
+002182H   0021E2H   000061H   BYTE   UNIT     CODE           ?PR?TRACK_SCAN?TRACK
+0021E3H   002242H   000060H   BYTE   UNIT     CODE           ?PR?ULTRASONIC_GETDISTANCE?ULTRASONIC
+002243H   00229FH   00005DH   BYTE   UNIT     CODE           ?PR?BLUETOOTH_UART_CONFIG?BLUETOOTH
+0022A0H   0022F8H   000059H   BYTE   UNIT     CODE           ?PR?TASK_BUZZER?MAIN
+0022F9H   00234DH   000055H   BYTE   UNIT     CODE           ?PR?_ADC_INILIZE?ADC
+00234EH   00239EH   000051H   BYTE   UNIT     CODE           ?PR?UART2_ISR_HANDLER?UART_ISR
+00239FH   0023EFH   000051H   BYTE   UNIT     CODE           ?PR?UART3_ISR_HANDLER?UART_ISR
+0023F0H   002440H   000051H   BYTE   UNIT     CODE           ?PR?UART4_ISR_HANDLER?UART_ISR
+002441H   00248BH   00004BH   BYTE   UNIT     CODE           ?PR?UART1_ISR_HANDLER?UART_ISR
+00248CH   0024D2H   000047H   BYTE   UNIT     CODE           ?PR?_MOTORS_TRANSLATE?MOTORS
+0024D3H   002516H   000044H   BYTE   UNIT     CODE           ?C?LDIV
+002517H   002559H   000043H   BYTE   UNIT     CODE           ?PR?_NVIC_UART2_INIT?NVIC
+00255AH   00259AH   000041H   BYTE   UNIT     CODE           ?PR?_NVIC_ADC_INIT?NVIC
+00259BH   0025DBH   000041H   BYTE   UNIT     CODE           ?PR?_NVIC_UART1_INIT?NVIC
+0025DCH   00260CH   000031H   BYTE   UNIT     CODE           ?PR?_KEY_SCAN?KEY
+00260DH   002639H   00002DH   BYTE   UNIT     CODE           ?PR?ULTRASONIC_INIT?ULTRASONIC
+00263AH   002665H   00002CH   BYTE   UNIT     CODE           ?PR?LIGHT_INIT?LIGHT
+002666H   00268DH   000028H   BYTE   UNIT     CODE           ?PR?BATTERY_ADC_CONFIG?BATTERY
+00268EH   0026B3H   000026H   BYTE   UNIT     CODE           ?PR?MOTORS_GPIO_CONFIG?MOTORS
+0026B4H   0026D9H   000026H   BYTE   UNIT     CODE           ?PR?_MOTORS_LEFT?MOTORS
+0026DAH   0026FEH   000025H   BYTE   UNIT     CODE           ?PR?_MOTORS_RIGHT?MOTORS
+0026FFH   00271DH   00001FH   BYTE   UNIT     CODE           ?PR?TASK_KEY?MAIN
+00271EH   00273BH   00001EH   BYTE   UNIT     CODE           ?C_INITSEG
+00273CH   002757H   00001CH   BYTE   UNIT     CODE           ?PR?BUZZER_STOP?BUZZER
+002758H   002771H   00001AH   BYTE   UNIT     CODE           ?PR?TASK_LED?MAIN
+002772H   002788H   000017H   BYTE   UNIT     CODE           ?PR?TASK_MAIN?MAIN
+002789H   00279EH   000016H   BYTE   UNIT     CODE           ?PR?BUZZER_GPIO_CONFIG?BUZZER
+00279FH   0027B1H   000013H   BYTE   UNIT     CODE           ?PR?BATTERY_GPIO_CONFIG?BATTERY
+0027B2H   0027C4H   000013H   BYTE   UNIT     CODE           ?PR?BLUETOOTH_GPIO_CONFIG?BLUETOOTH
+0027C5H   0027D6H   000012H   BYTE   UNIT     CODE           ?PR?_LIGHT_ON?LIGHT
+0027D7H   0027E8H   000012H   BYTE   UNIT     CODE           ?PR?_LIGHT_OFF?LIGHT
+0027E9H   0027FAH   000012H   BYTE   UNIT     CODE           ?PR?TRACK_INIT?TRACK
+0027FBH   00280AH   000010H   BYTE   UNIT     CODE           ?RTX?TASKENT?S
+00280BH   002817H   00000DH   BYTE   UNIT     CODE           ?PR?_TX1_WRITE2BUFF?UART
+002818H   002824H   00000DH   BYTE   UNIT     CODE           ?PR?DELAY100US?ULTRASONIC
+002825H   002831H   00000DH   BYTE   UNIT     CODE           ?PR?DOWN?MAIN
+002832H   00283DH   00000CH   BYTE   UNIT     CODE           ?PR?_ADC_POWERCONTROL?ADC
+00283EH   002846H   000009H   BYTE   UNIT     CODE           ?PR?TASK_BT?MAIN
+002847H   00284DH   000007H   BYTE   UNIT     CODE           ?PR?BUZZER_INIT?BUZZER
+00284EH   002854H   000007H   BYTE   UNIT     CODE           ?PR?MOTORS_INIT?MOTORS
+002855H   00285BH   000007H   BYTE   UNIT     CODE           ?PR?DELAY10US?ULTRASONIC
+00285CH   002861H   000006H   BYTE   UNIT     CODE           ?PR?BATTERY_INIT?BATTERY
+002862H   002866H   000005H   BYTE   UNIT     CODE           ?PR?UP?MAIN
+002867H   002869H   000003H   BYTE   UNIT     CODE           ?PR?_BUZZER_PLAY?BUZZER
+00286AH   00286FH   000006H   BYTE   UNIT     CONST          ?CO?MAIN
+
+* * * * * * * * * * *  X D A T A   M E M O R Y  * * * * * * * * * * * * *
+000000H   000068H   000069H   BYTE   INPAGE   PDATA          _PDATA_GROUP_
+000069H   00007CH   000014H   BYTE   INPAGE   PDATA          ?PD?UART
+00007DH   00008EH   000012H   BYTE   INPAGE   PDATA          ?PD?MAIN
+00008FH   000090H   000002H   BYTE   INPAGE   PDATA          ?PD?TRACK
+000091H   000091H   000001H   BYTE   INPAGE   PDATA          ?PD?KEY
+000092H   000351H   0002C0H   BYTE   UNIT     XDATA          ?XD?UART
+
+* * * * * * * * *   R E M O V E D     S E G M E N T S   * * * * * * * *
+   *DEL*:           000076H   BYTE   UNIT     CODE           ?PR?_GET_ADCRESULT?ADC
+   *DEL*:           000002H   BYTE   INPAGE   PDATA          ?PD?_GET_ADCRESULT?ADC
+   *DEL*:           000041H   BYTE   UNIT     CODE           ?PR?_NVIC_TIMER0_INIT?NVIC
+   *DEL*:           000041H   BYTE   UNIT     CODE           ?PR?_NVIC_TIMER1_INIT?NVIC
+LX51 LINKER/LOCATER V4.66.100.0                                                       12/31/2024  15:50:56  PAGE 5
+
+
+   *DEL*:           000022H   BYTE   UNIT     CODE           ?PR?_NVIC_TIMER2_INIT?NVIC
+   *DEL*:           000022H   BYTE   UNIT     CODE           ?PR?_NVIC_TIMER3_INIT?NVIC
+   *DEL*:           000023H   BYTE   UNIT     CODE           ?PR?_NVIC_TIMER4_INIT?NVIC
+   *DEL*:           000041H   BYTE   UNIT     CODE           ?PR?_NVIC_INT0_INIT?NVIC
+   *DEL*:           000041H   BYTE   UNIT     CODE           ?PR?_NVIC_INT1_INIT?NVIC
+   *DEL*:           000018H   BYTE   UNIT     CODE           ?PR?_NVIC_INT2_INIT?NVIC
+   *DEL*:           000019H   BYTE   UNIT     CODE           ?PR?_NVIC_INT3_INIT?NVIC
+   *DEL*:           00001AH   BYTE   UNIT     CODE           ?PR?_NVIC_INT4_INIT?NVIC
+   *DEL*:           00004BH   BYTE   UNIT     CODE           ?PR?_NVIC_CMP_INIT?NVIC
+   *DEL*:           00005DH   BYTE   UNIT     CODE           ?PR?_NVIC_I2C_INIT?NVIC
+   *DEL*:           00004AH   BYTE   UNIT     CODE           ?PR?_NVIC_UART3_INIT?NVIC
+   *DEL*:           000048H   BYTE   UNIT     CODE           ?PR?_NVIC_UART4_INIT?NVIC
+   *DEL*:           000047H   BYTE   UNIT     CODE           ?PR?_NVIC_SPI_INIT?NVIC
+   *DEL*:           00007FH   BYTE   UNIT     CODE           ?PR?_NVIC_PWM_INIT?NVIC
+   *DEL*:           00003AH   BYTE   UNIT     CODE           ?PR?_NVIC_RTC_INIT?NVIC
+   *DEL*:           00014DH   BYTE   UNIT     CODE           ?PR?_UPDATEPWM?STC8H_PWM
+   *DEL*:           000013H   BYTE   UNIT     CODE           ?PR?_PRINTSTRING1?UART
+   *DEL*:           00000DH   BYTE   UNIT     CODE           ?PR?_TX2_WRITE2BUFF?UART
+   *DEL*:           000013H   BYTE   UNIT     CODE           ?PR?_PRINTSTRING2?UART
+   *DEL*:           00000DH   BYTE   UNIT     CODE           ?PR?_TX3_WRITE2BUFF?UART
+   *DEL*:           000013H   BYTE   UNIT     CODE           ?PR?_PRINTSTRING3?UART
+   *DEL*:           00000DH   BYTE   UNIT     CODE           ?PR?_TX4_WRITE2BUFF?UART
+   *DEL*:           000013H   BYTE   UNIT     CODE           ?PR?_PRINTSTRING4?UART
+   *DEL*:           000021H   BYTE   UNIT     CODE           ?PR?BATTERY_GETVOLTAGE?BATTERY
+   *DEL*:           0000CFH   BYTE   UNIT     CODE           ?PR?TASK_BLUETOOTH?BLUETOOTH
+   *DEL*:           000002H   BYTE   INPAGE   PDATA          ?PD?TASK_BLUETOOTH?BLUETOOTH
+   *DEL*:           00004AH   BYTE   UNIT     CODE           ?PR?_MOTORS_BACKWARD?MOTORS
+   *DEL*:           000004H   BYTE   INPAGE   PDATA          ?PD?_MOTORS_BACKWARD?MOTORS
+   *DEL*:           000026H   BYTE   UNIT     CODE           ?PR?_MOTORS_AROUND?MOTORS
+   *DEL*:           000004H   BYTE   INPAGE   PDATA          ?PD?_MOTORS_AROUND?MOTORS
+   *DEL*:           00001FH   BYTE   UNIT     CODE           ?PR?MOTORS_STOP?MOTORS
+   *DEL*:           000004H   BYTE   INPAGE   PDATA          ?PD?MOTORS_STOP?MOTORS
+   *DEL*:           000035H   BYTE   UNIT     CODE           ?PR?_LIMITSPEED?MOTORS
+   *DEL*:           0000AAH   BYTE   UNIT     CODE           ?PR?_MOTORS_MOVE?MOTORS
+   *DEL*:           000006H   BYTE   INPAGE   PDATA          ?PD?_MOTORS_MOVE?MOTORS
+   *DEL*:           000113H   BYTE   UNIT     CODE           ?PR?_HANDLE_BT_DATA?MAIN
+   *DEL*:           000005H   BYTE   INPAGE   PDATA          ?PD?_HANDLE_BT_DATA?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   .\BUILD\RELEASE\循迹小车 (ADC)
+
+
+FUNCTION/MODULE                         BIT_GROUP   DATA_GROUP   PDATA_GROUP
+--> CALLED FUNCTION/MODULE             START  STOP  START  STOP  START  STOP
+============================================================================
+UART1_ISR_HANDLER/UART_ISR             ----- -----  ----- -----  ----- -----
+
+*** NEW ROOT *************************
+
+UART2_ISR_HANDLER/UART_ISR             ----- -----  ----- -----  ----- -----
+
+*** NEW ROOT *************************
+
+UART3_ISR_HANDLER/UART_ISR             ----- -----  ----- -----  ----- -----
+
+*** NEW ROOT *************************
+
+UART4_ISR_HANDLER/UART_ISR             ----- -----  ----- -----  ----- -----
+
+*** NEW ROOT *************************
+
+TASK_MAIN/MAIN                         ----- -----  ----- -----  ----- -----
+  +--> SYS_CONFIG/MAIN
+
+LX51 LINKER/LOCATER V4.66.100.0                                                       12/31/2024  15:50:56  PAGE 6
+
+
+SYS_CONFIG/MAIN                        ----- -----  ----- -----  ----- -----
+  +--> LIGHT_INIT/LIGHT
+  +--> KEY_INIT/KEY
+  +--> BATTERY_INIT/BATTERY
+  +--> BUZZER_INIT/BUZZER
+  +--> MOTORS_INIT/MOTORS
+  +--> ULTRASONIC_INIT/ULTRASONIC
+  +--> TRACK_INIT/TRACK
+  +--> BLUETOOTH_GPIO_CONFIG/BLUETOOTH
+  +--> BLUETOOTH_UART_CONFIG/BLUETOOTH
+
+LIGHT_INIT/LIGHT                       ----- -----  ----- -----  0013H 0014H
+  +--> _GPIO_INILIZE/GPIO
+
+_GPIO_INILIZE/GPIO                     ----- -----  ----- -----  ----- -----
+
+KEY_INIT/KEY                           ----- -----  ----- -----  0013H 0014H
+  +--> _GPIO_INILIZE/GPIO
+
+BATTERY_INIT/BATTERY                   ----- -----  ----- -----  ----- -----
+  +--> BATTERY_GPIO_CONFIG/BATTERY
+  +--> BATTERY_ADC_CONFIG/BATTERY
+
+BATTERY_GPIO_CONFIG/BATTERY            ----- -----  ----- -----  0013H 0014H
+  +--> _GPIO_INILIZE/GPIO
+
+BATTERY_ADC_CONFIG/BATTERY             ----- -----  ----- -----  0013H 0017H
+  +--> _ADC_INILIZE/ADC
+  +--> _ADC_POWERCONTROL/ADC
+  +--> _NVIC_ADC_INIT/NVIC
+
+_ADC_INILIZE/ADC                       ----- -----  ----- -----  ----- -----
+
+_ADC_POWERCONTROL/ADC                  ----- -----  ----- -----  ----- -----
+
+_NVIC_ADC_INIT/NVIC                    ----- -----  ----- -----  ----- -----
+
+BUZZER_INIT/BUZZER                     ----- -----  ----- -----  ----- -----
+  +--> BUZZER_GPIO_CONFIG/BUZZER
+
+BUZZER_GPIO_CONFIG/BUZZER              ----- -----  ----- -----  0013H 0014H
+  +--> _GPIO_INILIZE/GPIO
+
+MOTORS_INIT/MOTORS                     ----- -----  ----- -----  ----- -----
+  +--> MOTORS_GPIO_CONFIG/MOTORS
+
+MOTORS_GPIO_CONFIG/MOTORS              ----- -----  ----- -----  0013H 0014H
+  +--> _GPIO_INILIZE/GPIO
+
+ULTRASONIC_INIT/ULTRASONIC             ----- -----  ----- -----  0013H 0014H
+  +--> _GPIO_INILIZE/GPIO
+
+TRACK_INIT/TRACK                       ----- -----  ----- -----  0013H 0014H
+  +--> _GPIO_INILIZE/GPIO
+
+BLUETOOTH_GPIO_CONFIG/BLUETOOTH        ----- -----  ----- -----  0013H 0014H
+  +--> _GPIO_INILIZE/GPIO
+
+BLUETOOTH_UART_CONFIG/BLUETOOTH        ----- -----  ----- -----  0013H 001BH
+  +--> _UART_CONFIGURATION/UART
+  +--> _NVIC_UART1_INIT/NVIC
+  +--> _NVIC_UART2_INIT/NVIC
+
+_UART_CONFIGURATION/UART               ----- -----  ----- -----  001CH 0025H
+
+LX51 LINKER/LOCATER V4.66.100.0                                                       12/31/2024  15:50:56  PAGE 7
+
+
+_NVIC_UART1_INIT/NVIC                  ----- -----  ----- -----  ----- -----
+
+_NVIC_UART2_INIT/NVIC                  ----- -----  ----- -----  ----- -----
+
+*** NEW ROOT *************************
+
+TASK_BT/MAIN                           ----- -----  ----- -----  ----- -----
+
+*** NEW ROOT *************************
+
+TASK_LED/MAIN                          ----- -----  ----- -----  ----- -----
+  +--> _LIGHT_ON/LIGHT
+  +--> _LIGHT_OFF/LIGHT
+
+_LIGHT_ON/LIGHT                        ----- -----  ----- -----  ----- -----
+
+_LIGHT_OFF/LIGHT                       ----- -----  ----- -----  ----- -----
+
+*** NEW ROOT *************************
+
+TASK_KEY/MAIN                          ----- -----  ----- -----  ----- -----
+  +--> UP/MAIN
+  +--> DOWN/MAIN
+  +--> _KEY_SCAN/KEY
+
+UP/MAIN                                ----- -----  ----- -----  ----- -----
+  +--> _LIGHT_OFF/LIGHT
+
+DOWN/MAIN                              ----- -----  ----- -----  ----- -----
+  +--> SYS_CONFIG/MAIN
+  +--> _LIGHT_ON/LIGHT
+
+_KEY_SCAN/KEY                          ----- -----  ----- -----  0013H 0018H
+
+*** NEW ROOT *************************
+
+TASK_ULTRASONIC/MAIN                   ----- -----  ----- -----  0026H 0029H
+  +--> ULTRASONIC_GETDISTANCE/ULTRASONIC
+  +--> PRINTF/PRINTF
+  +--> _MOTORS_TRANSLATE/MOTORS
+
+ULTRASONIC_GETDISTANCE/ULTRASONIC      ----- -----  ----- -----  ----- -----
+  +--> DELAY10US/ULTRASONIC
+  +--> DELAY100US/ULTRASONIC
+
+DELAY10US/ULTRASONIC                   ----- -----  000EH 000EH  ----- -----
+
+DELAY100US/ULTRASONIC                  ----- -----  000EH 000FH  ----- -----
+
+PRINTF/PRINTF                          20H.0 21H.0  000EH 0012H  002AH 0040H
+  +--> _PUTCHAR/UART
+
+_PUTCHAR/UART                          ----- -----  ----- -----  ----- -----
+  +--> _TX1_WRITE2BUFF/UART
+
+_TX1_WRITE2BUFF/UART                   ----- -----  ----- -----  ----- -----
+
+_MOTORS_TRANSLATE/MOTORS               ----- -----  ----- -----  002AH 002DH
+  +--> MOTORS_PWM_CONFIG/MOTORS
+
+MOTORS_PWM_CONFIG/MOTORS               ----- -----  ----- -----  0054H 0068H
+  +--> _SPEED2DUTY/MOTORS
+  +--> _PWM_CONFIGURATION/STC8H_PWM
+
+_SPEED2DUTY/MOTORS                     ----- -----  ----- -----  ----- -----
+LX51 LINKER/LOCATER V4.66.100.0                                                       12/31/2024  15:50:56  PAGE 8
+
+
+
+_PWM_CONFIGURATION/STC8H_PWM           ----- -----  ----- -----  ----- -----
+
+*** NEW ROOT *************************
+
+TASK_BUZZER/MAIN                       ----- -----  ----- -----  0043H 0044H
+  +--> _BUZZER_PLAY/BUZZER
+  +--> BUZZER_STOP/BUZZER
+
+_BUZZER_PLAY/BUZZER                    ----- -----  ----- -----  ----- -----
+  +--> _PWM_CONFIG/BUZZER
+
+_PWM_CONFIG/BUZZER                     ----- -----  ----- -----  0045H 004DH
+  +--> _PWM_CONFIGURATION/STC8H_PWM
+
+BUZZER_STOP/BUZZER                     ----- -----  ----- -----  0045H 004DH
+  +--> _PWM_CONFIGURATION/STC8H_PWM
+
+*** NEW ROOT *************************
+
+TASK_TRACK/MAIN                        ----- -----  ----- -----  004EH 004FH
+  +--> TRACK_SCAN/TRACK
+  +--> _MOTORS_LEFT/MOTORS
+  +--> _MOTORS_RIGHT/MOTORS
+  +--> _MOTORS_FORWARD/MOTORS
+
+TRACK_SCAN/TRACK                       ----- -----  ----- -----  ----- -----
+
+_MOTORS_LEFT/MOTORS                    ----- -----  ----- -----  0050H 0053H
+  +--> MOTORS_PWM_CONFIG/MOTORS
+
+_MOTORS_RIGHT/MOTORS                   ----- -----  ----- -----  0050H 0053H
+  +--> MOTORS_PWM_CONFIG/MOTORS
+
+_MOTORS_FORWARD/MOTORS                 ----- -----  ----- -----  0050H 0053H
+  +--> MOTORS_PWM_CONFIG/MOTORS
+
+*** NEW ROOT *************************
+
+?C_C51STARTUP                          ----- -----  ----- -----  ----- -----
+  +--> ?C_INITSEG
+
+?C_INITSEG                             ----- -----  ----- -----  ----- -----
+
+
+
+PUBLIC SYMBOLS OF MODULE:  .\BUILD\RELEASE\循迹小车 (ADC)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+      02000013H   PDATA    BYTE      ?_Key_Scan?BYTE
+      0200002AH   PDATA    ---       ?_PRINTF?BYTE
+      0200002AH   PDATA    ---       ?_SPRINTF?BYTE
+      010002F3H   CODE     ---       ?C?CASTF
+      010009C4H   CODE     ---       ?C?CCASE
+      0100071DH   CODE     ---       ?C?CLDOPTR
+      01000704H   CODE     ---       ?C?CLDPTR
+      00000000H   NUMBER   ---       ?C?CODESEG
+      010006DEH   CODE     ---       ?C?COPY
+      0100074AH   CODE     ---       ?C?CSTPTR
+      010002BFH   CODE     ---       ?C?FCASTC
+      010002BAH   CODE     ---       ?C?FCASTI
+      010002B5H   CODE     ---       ?C?FCASTL
+      010004ADH   CODE     ---       ?C?FPADD
+LX51 LINKER/LOCATER V4.66.100.0                                                       12/31/2024  15:50:56  PAGE 9
+
+
+      0100023EH   CODE     ---       ?C?FPCMP
+      0100023CH   CODE     ---       ?C?FPCMP3
+      010003A3H   CODE     ---       ?C?FPCONVERT
+      0100019FH   CODE     ---       ?C?FPDIV
+      0100032AH   CODE     ---       ?C?FPGETOPN2
+      01000096H   CODE     ---       ?C?FPMUL
+      0100035FH   CODE     ---       ?C?FPNANRESULT
+      01000369H   CODE     ---       ?C?FPOVERFLOW
+      01000341H   CODE     ---       ?C?FPRESULT
+      01000355H   CODE     ---       ?C?FPRESULT2
+      01000374H   CODE     ---       ?C?FPROUND
+      010004A9H   CODE     ---       ?C?FPSUB
+      01000366H   CODE     ---       ?C?FPUNDERFLOW
+      010005CEH   CODE     ---       ?C?FTNPWR
+      010009EAH   CODE     ---       ?C?ICALL
+      010009EEH   CODE     ---       ?C?ICALL2
+      010007CFH   CODE     ---       ?C?ILDOPTR
+      010007A4H   CODE     ---       ?C?ILDPTR
+      0100075CH   CODE     ---       ?C?IMUL
+      01000A6BH   CODE     ---       ?C?LLDCODE0
+      01000A45H   CODE     ---       ?C?LLDIDATA0
+      01000956H   CODE     ---       ?C?LLDOPTR0
+      01000A5EH   CODE     ---       ?C?LLDPDATA0
+      01000A52H   CODE     ---       ?C?LLDXDATA0
+      01000807H   CODE     ---       ?C?LMUL
+      01000924H   CODE     ---       ?C?LNEG
+      01000992H   CODE     ---       ?C?LSTKPDATA
+      01000986H   CODE     ---       ?C?LSTPDATA
+      010009ABH   CODE     ---       ?C?PLDIPDATA
+      010009BBH   CODE     ---       ?C?PSTPDATA
+      0100076EH   CODE     ---       ?C?SIDIV
+      010024D3H   CODE     ---       ?C?SLDIV
+      010009F0H   CODE     ---       ?C?UIDIV
+      01000932H   CODE     ---       ?C?ULCMP
+      01000892H   CODE     ---       ?C?ULDIV
+      01000943H   CODE     ---       ?C?ULSHR
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      01001FE9H   CODE     ---       ?C_START
+      01000000H   CODE     ---       ?C_STARTUP
+      02000054H   PDATA    BYTE      ?Motors_PWM_Config?BYTE
+      0100193AH   CODE     ---       ?RTX?SET_ISR
+      00000007H   NUMBER   ---       ?RTX_CNTTASK
+      0000000CH   DATA     ---       ?RTX_CURRENTTASK
+      00000000H   NUMBER   ---       ?RTX_FTASKCONTEXT?1
+      00000000H   NUMBER   ---       ?RTX_FTASKCONTEXT?2
+      00000000H   NUMBER   ---       ?RTX_FTASKCONTEXT?3
+      00000000H   NUMBER   ---       ?RTX_FTASKDATA?1
+      00000000H   NUMBER   ---       ?RTX_FTASKDATA?2
+      00000000H   NUMBER   ---       ?RTX_FTASKDATA?3
+      00000007H   NUMBER   ---       ?RTX_MAXTASKN
+      00000007H   DATA     ---       ?RTX_NEXTID
+      0100197DH   CODE     ---       ?RTX_NEXTTASK
+      00000000H   NUMBER   ---       ?RTX_PBP
+      000000FFH   NUMBER   ---       ?RTX_RAMTOP
+      00000000H   NUMBER   ---       ?RTX_REENTRANT
+      010027FBH   CODE     ---       ?RTX_TASKENTRY
+      01001A5CH   CODE     ---       ?RTX_TASKIDX
+      00000013H   IDATA    ---       ?RTX_TASKSP
+      00000022H   IDATA    ---       ?RTX_TASKSTATUS
+      010022F9H   CODE     ---       _ADC_Inilize
+      01002832H   CODE     ---       _ADC_PowerControl
+      01002867H   CODE     ---       _Buzzer_Play
+*DEL*:00000000H   CODE     ---       _Get_ADCResult
+      01001BCEH   CODE     ---       _GPIO_Inilize
+*DEL*:00000000H   CODE     ---       _handle_bt_data
+LX51 LINKER/LOCATER V4.66.100.0                                                       12/31/2024  15:50:56  PAGE 10
+
+
+      010025DCH   CODE     ---       _Key_Scan
+      010027D7H   CODE     ---       _Light_Off
+      010027C5H   CODE     ---       _Light_On
+*DEL*:00000018H   CODE     ---       _LimitSpeed
+*DEL*:00000000H   CODE     ---       _Motors_Around
+*DEL*:00000000H   CODE     ---       _Motors_Backward
+      01000046H   CODE     ---       _Motors_Forward
+      010026B4H   CODE     ---       _Motors_Left
+*DEL*:00000000H   CODE     ---       _Motors_Move
+      010026DAH   CODE     ---       _Motors_Right
+      0100248CH   CODE     ---       _Motors_Translate
+      0100255AH   CODE     ---       _NVIC_ADC_Init
+*DEL*:00000000H   CODE     ---       _NVIC_CMP_Init
+*DEL*:00000000H   CODE     ---       _NVIC_I2C_Init
+*DEL*:00000000H   CODE     ---       _NVIC_INT0_Init
+*DEL*:00000000H   CODE     ---       _NVIC_INT1_Init
+*DEL*:00000000H   CODE     ---       _NVIC_INT2_Init
+*DEL*:00000000H   CODE     ---       _NVIC_INT3_Init
+*DEL*:00000000H   CODE     ---       _NVIC_INT4_Init
+*DEL*:00000000H   CODE     ---       _NVIC_PWM_Init
+*DEL*:00000000H   CODE     ---       _NVIC_RTC_Init
+*DEL*:00000000H   CODE     ---       _NVIC_SPI_Init
+*DEL*:00000000H   CODE     ---       _NVIC_Timer0_Init
+*DEL*:00000000H   CODE     ---       _NVIC_Timer1_Init
+*DEL*:00000000H   CODE     ---       _NVIC_Timer2_Init
+*DEL*:00000000H   CODE     ---       _NVIC_Timer3_Init
+*DEL*:00000000H   CODE     ---       _NVIC_Timer4_Init
+      0100259BH   CODE     ---       _NVIC_UART1_Init
+      01002517H   CODE     ---       _NVIC_UART2_Init
+*DEL*:00000000H   CODE     ---       _NVIC_UART3_Init
+*DEL*:00000000H   CODE     ---       _NVIC_UART4_Init
+      01001A5DH   CODE     ---       _os_create_task
+      01001AE6H   CODE     ---       _os_delete_task
+      01001B6FH   CODE     ---       _OS_WAIT
+      01001B6FH   CODE     ---       _OS_WAIT1
+      01001B6FH   CODE     ---       _os_wait2
+      010010CDH   CODE     ---       _PRINTF
+*DEL*:00000000H   CODE     ---       _PrintString1
+*DEL*:00000000H   CODE     ---       _PrintString2
+*DEL*:00000000H   CODE     ---       _PrintString3
+*DEL*:00000000H   CODE     ---       _PrintString4
+      0100008EH   CODE     ---       _putchar
+      010020ACH   CODE     ---       _PWM_Config
+      010014D9H   CODE     ---       _PWM_Configuration
+      01000003H   CODE     ---       _Speed2Duty
+      010010C7H   CODE     ---       _SPRINTF
+      0100280BH   CODE     ---       _TX1_write2buff
+*DEL*:00000000H   CODE     ---       _TX2_write2buff
+*DEL*:00000000H   CODE     ---       _TX3_write2buff
+*DEL*:00000000H   CODE     ---       _TX4_write2buff
+      01000A7BH   CODE     ---       _UART_Configuration
+*DEL*:00000000H   CODE     ---       _UpdatePwm
+      01002666H   CODE     ---       Battery_ADC_Config
+*DEL*:00000000H   CODE     ---       Battery_GetVoltage
+      0100279FH   CODE     ---       Battery_GPIO_Config
+      0100285CH   CODE     ---       Battery_Init
+      010027B2H   CODE     ---       Bluetooth_GPIO_Config
+      01002243H   CODE     ---       Bluetooth_UART_Config
+      01002789H   CODE     ---       Buzzer_GPIO_Config
+      01002847H   CODE     ---       Buzzer_Init
+      0100273CH   CODE     ---       Buzzer_Stop
+      02000069H   PDATA    ---       COM1
+      0200006EH   PDATA    ---       COM2
+      02000073H   PDATA    ---       COM3
+      02000078H   PDATA    ---       COM4
+LX51 LINKER/LOCATER V4.66.100.0                                                       12/31/2024  15:50:56  PAGE 11
+
+
+      0200008DH   PDATA    INT       countA
+      01002818H   CODE     ---       Delay100us
+      01002855H   CODE     ---       Delay10us
+      01002825H   CODE     ---       down
+      0200007DH   PDATA    ---       hz
+      0100000EH   CODE     ---       Key_Init
+      0200008FH   PDATA    INT       last_count
+      0100263AH   CODE     ---       Light_Init
+      01001A20H   CODE     ---       MAIN
+      0100268EH   CODE     ---       Motors_GPIO_Config
+      0100284EH   CODE     ---       Motors_Init
+      01001E22H   CODE     ---       Motors_PWM_Config
+*DEL*:00000000H   CODE     ---       Motors_Stop
+      01001966H   CODE     ---       OS_SWITCH_TASK
+      02000092H   XDATA    ---       RX1_Buffer
+      02000112H   XDATA    ---       RX2_Buffer
+      02000192H   XDATA    ---       RX3_Buffer
+      02000252H   XDATA    ---       RX4_Buffer
+      02000091H   PDATA    BYTE      status
+      01000026H   CODE     ---       sys_config
+*DEL*:00000000H   CODE     ---       task_bluetooth
+      0100283EH   CODE     ---       task_bt
+      010022A0H   CODE     ---       task_buzzer
+      010026FFH   CODE     ---       task_key
+      01002758H   CODE     ---       task_led
+      01002772H   CODE     ---       task_main
+      0100202EH   CODE     ---       task_track
+      01002117H   CODE     ---       task_Ultrasonic
+      010027E9H   CODE     ---       Track_Init
+      01002182H   CODE     ---       Track_Scan
+      020001D2H   XDATA    ---       TX1_Buffer
+      02000272H   XDATA    ---       TX2_Buffer
+      020002F2H   XDATA    ---       TX3_Buffer
+      02000332H   XDATA    ---       TX4_Buffer
+      01002441H   CODE     ---       UART1_ISR_Handler
+      0100234EH   CODE     ---       UART2_ISR_Handler
+      0100239FH   CODE     ---       UART3_ISR_Handler
+      010023F0H   CODE     ---       UART4_ISR_Handler
+      010021E3H   CODE     ---       Ultrasonic_GetDistance
+      0100260DH   CODE     ---       Ultrasonic_Init
+      01002862H   CODE     ---       up
+
+
+
+SYMBOL TABLE OF MODULE:  .\BUILD\RELEASE\循迹小车 (ADC)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       ADC
+      01002832H   PUBLIC    CODE     ---       _ADC_PowerControl
+      010022F9H   PUBLIC    CODE     ---       _ADC_Inilize
+
+      010022F9H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01002832H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+      00000005H   SYMBOL    DATA     VOID      i
+
+      ---         MODULE    ---      ---       GPIO
+      01001BCEH   PUBLIC    CODE     ---       _GPIO_Inilize
+
+      01001BCEH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+LX51 LINKER/LOCATER V4.66.100.0                                                       12/31/2024  15:50:56  PAGE 12
+
+
+      ---         MODULE    ---      ---       NVIC
+      01002517H   PUBLIC    CODE     ---       _NVIC_UART2_Init
+      0100259BH   PUBLIC    CODE     ---       _NVIC_UART1_Init
+      0100255AH   PUBLIC    CODE     ---       _NVIC_ADC_Init
+
+      0100255AH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100259BH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01002517H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       STC8H_PWM
+      010014D9H   PUBLIC    CODE     ---       _PWM_Configuration
+
+      010014D9H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       UART
+      02000332H   PUBLIC    XDATA    ---       TX4_Buffer
+      020002F2H   PUBLIC    XDATA    ---       TX3_Buffer
+      02000272H   PUBLIC    XDATA    ---       TX2_Buffer
+      02000252H   PUBLIC    XDATA    ---       RX4_Buffer
+      020001D2H   PUBLIC    XDATA    ---       TX1_Buffer
+      02000192H   PUBLIC    XDATA    ---       RX3_Buffer
+      02000112H   PUBLIC    XDATA    ---       RX2_Buffer
+      02000092H   PUBLIC    XDATA    ---       RX1_Buffer
+      02000078H   PUBLIC    PDATA    ---       COM4
+      02000073H   PUBLIC    PDATA    ---       COM3
+      0200006EH   PUBLIC    PDATA    ---       COM2
+      02000069H   PUBLIC    PDATA    ---       COM1
+      0100008EH   PUBLIC    CODE     ---       _putchar
+      0100280BH   PUBLIC    CODE     ---       _TX1_write2buff
+      01000A7BH   PUBLIC    CODE     ---       _UART_Configuration
+
+      01000A7BH   BLOCK     CODE     ---       LVL=0
+      01000A89H   BLOCK     CODE     NEAR LAB  LVL=1
+      02000020H   SYMBOL    PDATA    VOID      i
+      02000022H   SYMBOL    PDATA    VOID      j
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100280BH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100008EH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       UART_ISR
+      010023F0H   PUBLIC    CODE     ---       UART4_ISR_Handler
+      0100239FH   PUBLIC    CODE     ---       UART3_ISR_Handler
+      0100234EH   PUBLIC    CODE     ---       UART2_ISR_Handler
+      01002441H   PUBLIC    CODE     ---       UART1_ISR_Handler
+
+      01002441H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100234EH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100239FH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+LX51 LINKER/LOCATER V4.66.100.0                                                       12/31/2024  15:50:56  PAGE 13
+
+
+      010023F0H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       ?RTX51_TINY_KERNAL
+      0100193AH   PUBLIC    CODE     ---       ?RTX?SET_ISR
+      0000000CH   PUBLIC    DATA     ---       ?RTX_CURRENTTASK
+      00000007H   PUBLIC    DATA     ---       ?RTX_NEXTID
+      0100197DH   PUBLIC    CODE     ---       ?RTX_NEXTTASK
+      000000FFH   PUBLIC    NUMBER   ---       ?RTX_RAMTOP
+      010027FBH   PUBLIC    CODE     ---       ?RTX_TASKENTRY
+      01001A5CH   PUBLIC    CODE     ---       ?RTX_TASKIDX
+      00000013H   PUBLIC    IDATA    ---       ?RTX_TASKSP
+      00000022H   PUBLIC    IDATA    ---       ?RTX_TASKSTATUS
+      01001A20H   PUBLIC    CODE     ---       MAIN
+      01001966H   PUBLIC    CODE     ---       OS_SWITCH_TASK
+      0100196FH   SYMBOL    CODE     ---       ?C0001
+      01001979H   SYMBOL    CODE     ---       ?C0003
+      0100197EH   SYMBOL    CODE     ---       ?C0005
+      01001998H   SYMBOL    CODE     ---       ?C0007
+      0100199AH   SYMBOL    CODE     ---       ?C0009
+      010019A4H   SYMBOL    CODE     ---       ?C0011
+      010019D1H   SYMBOL    CODE     ---       ?C0012
+      010019B7H   SYMBOL    CODE     ---       ?C0013
+      010019BCH   SYMBOL    CODE     ---       ?C0015
+      010019C7H   SYMBOL    CODE     ---       ?C0016
+      00000000H   SYMBOL    NUMBER   ---       ?RTX51_TINY_KERNAL
+      0000D8F0H   SYMBOL    NUMBER   ---       ?RTX_CLOCK
+      00000008H   SYMBOL    NUMBER   ---       ?RTX_REGISTERBANK
+      0000000DH   SYMBOL    DATA     ---       ?RTX_ROBINTIME
+      0000000AH   SYMBOL    DATA     ---       ?RTX_SAVEACC
+      0000000BH   SYMBOL    DATA     ---       ?RTX_SAVEPSW
+      010018EBH   SYMBOL    CODE     ---       ?RTX_STACKERROR
+      0100193EH   SYMBOL    CODE     ---       ?RTX_TASKSWITCHING
+      00000021H.1 SYMBOL    BIT      ---       ?RTX_TS_DELAY
+      000000E0H   SYMBOL    DATA     ---       ACC
+      000000F0H   SYMBOL    DATA     ---       B
+      00000005H   SYMBOL    NUMBER   ---       B_ACTIVE
+      00000007H   SYMBOL    NUMBER   ---       B_IVL
+      00000007H   SYMBOL    NUMBER   ---       B_RDY
+      00000004H   SYMBOL    NUMBER   ---       B_READY
+      00000006H   SYMBOL    NUMBER   ---       B_ROBIN
+      00000002H   SYMBOL    NUMBER   ---       B_SIGNAL
+      00000003H   SYMBOL    NUMBER   ---       B_TIMEOUT
+      00000000H   SYMBOL    NUMBER   ---       B_WAITSIG
+      00000001H   SYMBOL    NUMBER   ---       B_WAITTIM
+      0100193BH   SYMBOL    CODE     ---       CHECKROBINTIME
+      01001915H   SYMBOL    CODE     ---       CHECKSTACK
+      00000000H   SYMBOL    NUMBER   ---       CODE_BANKING
+      00000000H   SYMBOL    NUMBER   ---       CPU_IDLE_CODE
+      00000083H   SYMBOL    DATA     ---       DPH
+      00000082H   SYMBOL    DATA     ---       DPL
+      000000A8H.7 SYMBOL    BIT      ---       EA
+      000000A8H.4 SYMBOL    BIT      ---       ES
+      000000A8H.1 SYMBOL    BIT      ---       ET0
+      000000A8H.3 SYMBOL    BIT      ---       ET1
+      000000A8H.0 SYMBOL    BIT      ---       EX0
+      000000A8H.2 SYMBOL    BIT      ---       EX1
+      00000014H   SYMBOL    NUMBER   ---       FREE_STACK
+      010018EFH   SYMBOL    CODE     ---       HW_TIMER
+      000000A8H   SYMBOL    DATA     ---       IE
+      00000088H.1 SYMBOL    BIT      ---       IE0
+      00000088H.3 SYMBOL    BIT      ---       IE1
+      00002710H   SYMBOL    NUMBER   ---       INT_CLOCK
+      00000001H   SYMBOL    NUMBER   ---       INT_REGBANK
+      00000088H.0 SYMBOL    BIT      ---       IT0
+LX51 LINKER/LOCATER V4.66.100.0                                                       12/31/2024  15:50:56  PAGE 14
+
+
+      00000088H.2 SYMBOL    BIT      ---       IT1
+      00000020H   SYMBOL    NUMBER   ---       K_ACTIVE
+      00000080H   SYMBOL    NUMBER   ---       K_IVL
+      00000080H   SYMBOL    NUMBER   ---       K_RDY
+      00000010H   SYMBOL    NUMBER   ---       K_READY
+      00000040H   SYMBOL    NUMBER   ---       K_ROBIN
+      00000001H   SYMBOL    NUMBER   ---       K_SIG
+      00000002H   SYMBOL    NUMBER   ---       K_TMO
+      00000000H   SYMBOL    NUMBER   ---       LONG_USR_INTR
+      01001A29H   SYMBOL    CODE     ---       MAIN1
+      01001A33H   SYMBOL    CODE     ---       MAIN1X
+      01001A2EH   SYMBOL    CODE     ---       MAIN2
+      010019F4H   SYMBOL    CODE     ---       NOEVENT
+      0100193AH   SYMBOL    CODE     ---       NOROBINTIMEOUT
+      01001931H   SYMBOL    CODE     ---       NOTIMEOUT
+      0100192FH   SYMBOL    CODE     ---       NOWAITTIMEOUT
+      01001966H   SYMBOL    CODE     ---       OS_SWITCH_TASK1
+      00000087H   SYMBOL    DATA     ---       PCON
+      000000D0H   SYMBOL    DATA     ---       PSW
+      000000FFH   SYMBOL    NUMBER   ---       RAMTOP
+      00000080H   SYMBOL    NUMBER   ---       RDY_EVENT
+      01001A00H   SYMBOL    CODE     ---       ROBINON
+      010019E8H   SYMBOL    CODE     ---       SIGNALOFF
+      010019F4H   SYMBOL    CODE     ---       SIGNALON
+      00000004H   SYMBOL    NUMBER   ---       SIG_EVENT
+      00000081H   SYMBOL    DATA     ---       SP
+      00000023H   SYMBOL    IDATA    ---       TASKSTATE
+      00000088H   SYMBOL    DATA     ---       TCON
+      00000088H.5 SYMBOL    BIT      ---       TF0
+      00000088H.7 SYMBOL    BIT      ---       TF1
+      0000008CH   SYMBOL    DATA     ---       TH0
+      0000008DH   SYMBOL    DATA     ---       TH1
+      010019F0H   SYMBOL    CODE     ---       TIMEOUTON
+      010018F0H   SYMBOL    CODE     ---       TIMERINT
+      01001921H   SYMBOL    CODE     ---       TIMERLOOP
+      00000022H   SYMBOL    IDATA    ---       TIMERVAL
+      00000005H   SYMBOL    NUMBER   ---       TIMESHARING
+      0000008AH   SYMBOL    DATA     ---       TL0
+      0000008BH   SYMBOL    DATA     ---       TL1
+      00000089H   SYMBOL    DATA     ---       TMOD
+      00000008H   SYMBOL    NUMBER   ---       TMO_EVENT
+      00000088H.4 SYMBOL    BIT      ---       TR0
+      00000088H.6 SYMBOL    BIT      ---       TR1
+      0100000BH   LINE      CODE     ---       #271
+      010018EBH   LINE      CODE     ---       #279
+      010018EDH   LINE      CODE     ---       #279
+      010018EFH   LINE      CODE     ---       #282
+      010018F0H   LINE      CODE     ---       #299
+      010018F3H   LINE      CODE     ---       #301
+      010018F6H   LINE      CODE     ---       #302
+      010018F9H   LINE      CODE     ---       #303
+      010018FBH   LINE      CODE     ---       #305
+      010018FDH   LINE      CODE     ---       #306
+      010018FFH   LINE      CODE     ---       #307
+      01001901H   LINE      CODE     ---       #308
+      01001903H   LINE      CODE     ---       #309
+      01001905H   LINE      CODE     ---       #310
+      01001907H   LINE      CODE     ---       #311
+      01001909H   LINE      CODE     ---       #312
+      0100190BH   LINE      CODE     ---       #316
+      0100190CH   LINE      CODE     ---       #317
+      0100190EH   LINE      CODE     ---       #318
+      0100190FH   LINE      CODE     ---       #319
+      01001910H   LINE      CODE     ---       #320
+      01001913H   LINE      CODE     ---       #321
+LX51 LINKER/LOCATER V4.66.100.0                                                       12/31/2024  15:50:56  PAGE 15
+
+
+      01001915H   LINE      CODE     ---       #322
+      01001916H   LINE      CODE     ---       #323
+      01001918H   LINE      CODE     ---       #324
+      0100191BH   LINE      CODE     ---       #325
+      0100191DH   LINE      CODE     ---       #329
+      0100191FH   LINE      CODE     ---       #330
+      01001921H   LINE      CODE     ---       #331
+      01001922H   LINE      CODE     ---       #332
+      01001923H   LINE      CODE     ---       #333
+      01001924H   LINE      CODE     ---       #334
+      01001926H   LINE      CODE     ---       #335
+      01001928H   LINE      CODE     ---       #336
+      01001929H   LINE      CODE     ---       #337
+      0100192CH   LINE      CODE     ---       #338
+      0100192EH   LINE      CODE     ---       #339
+      0100192FH   LINE      CODE     ---       #340
+      01001931H   LINE      CODE     ---       #341
+      01001932H   LINE      CODE     ---       #342
+      01001934H   LINE      CODE     ---       #344
+      01001935H   LINE      CODE     ---       #345
+      01001937H   LINE      CODE     ---       #360
+      0100193AH   LINE      CODE     ---       #366
+      0100193BH   LINE      CODE     ---       #367
+      0100193EH   LINE      CODE     ---       #370
+      01001940H   LINE      CODE     ---       #371
+      01001942H   LINE      CODE     ---       #372
+      01001944H   LINE      CODE     ---       #373
+      01001946H   LINE      CODE     ---       #374
+      01001948H   LINE      CODE     ---       #375
+      0100194AH   LINE      CODE     ---       #376
+      0100194CH   LINE      CODE     ---       #377
+      0100194EH   LINE      CODE     ---       #378
+      01001950H   LINE      CODE     ---       #379
+      01001952H   LINE      CODE     ---       #380
+      01001954H   LINE      CODE     ---       #381
+      01001956H   LINE      CODE     ---       #382
+      01001958H   LINE      CODE     ---       #387
+      0100195AH   LINE      CODE     ---       #388
+      0100195BH   LINE      CODE     ---       #389
+      0100195DH   LINE      CODE     ---       #390
+      0100195EH   LINE      CODE     ---       #391
+      01001960H   LINE      CODE     ---       #392
+      01001962H   LINE      CODE     ---       #393
+      01001963H   LINE      CODE     ---       #394
+      01001964H   LINE      CODE     ---       #395
+      01001966H   LINE      CODE     ---       #424
+      01001968H   LINE      CODE     ---       #426
+      0100196AH   LINE      CODE     ---       #427
+      0100196BH   LINE      CODE     ---       #429
+      0100196CH   LINE      CODE     ---       #430
+      0100196EH   LINE      CODE     ---       #431
+      0100196FH   LINE      CODE     ---       #434
+      01001970H   LINE      CODE     ---       #435
+      01001971H   LINE      CODE     ---       #436
+      01001972H   LINE      CODE     ---       #444
+      01001975H   LINE      CODE     ---       #445
+      01001977H   LINE      CODE     ---       #446
+      01001979H   LINE      CODE     ---       #449
+      0100197AH   LINE      CODE     ---       #450
+      0100197DH   LINE      CODE     ---       #458
+      0100197EH   LINE      CODE     ---       #462
+      01001980H   LINE      CODE     ---       #463
+      01001981H   LINE      CODE     ---       #464
+      01001982H   LINE      CODE     ---       #465
+      01001984H   LINE      CODE     ---       #468
+LX51 LINKER/LOCATER V4.66.100.0                                                       12/31/2024  15:50:56  PAGE 16
+
+
+      01001986H   LINE      CODE     ---       #470
+      01001988H   LINE      CODE     ---       #471
+      0100198AH   LINE      CODE     ---       #472
+      0100198BH   LINE      CODE     ---       #473
+      0100198CH   LINE      CODE     ---       #474
+      0100198DH   LINE      CODE     ---       #476
+      0100198FH   LINE      CODE     ---       #478
+      01001990H   LINE      CODE     ---       #479
+      01001991H   LINE      CODE     ---       #480
+      01001993H   LINE      CODE     ---       #481
+      01001996H   LINE      CODE     ---       #482
+      01001998H   LINE      CODE     ---       #484
+      01001999H   LINE      CODE     ---       #485
+      0100199AH   LINE      CODE     ---       #490
+      0100199BH   LINE      CODE     ---       #491
+      0100199CH   LINE      CODE     ---       #492
+      0100199EH   LINE      CODE     ---       #496
+      0100199FH   LINE      CODE     ---       #497
+      010019A0H   LINE      CODE     ---       #498
+      010019A2H   LINE      CODE     ---       #499
+      010019A4H   LINE      CODE     ---       #505
+      010019A6H   LINE      CODE     ---       #506
+      010019A7H   LINE      CODE     ---       #507
+      010019A8H   LINE      CODE     ---       #508
+      010019AAH   LINE      CODE     ---       #510
+      010019ACH   LINE      CODE     ---       #511
+      010019AEH   LINE      CODE     ---       #512
+      010019AFH   LINE      CODE     ---       #513
+      010019B0H   LINE      CODE     ---       #516
+      010019B2H   LINE      CODE     ---       #517
+      010019B5H   LINE      CODE     ---       #518
+      010019B7H   LINE      CODE     ---       #520
+      010019B8H   LINE      CODE     ---       #522
+      010019B9H   LINE      CODE     ---       #523
+      010019BAH   LINE      CODE     ---       #524
+      010019BBH   LINE      CODE     ---       #525
+      010019BCH   LINE      CODE     ---       #529
+      010019BEH   LINE      CODE     ---       #530
+      010019BFH   LINE      CODE     ---       #531
+      010019C1H   LINE      CODE     ---       #535
+      010019C3H   LINE      CODE     ---       #536
+      010019C4H   LINE      CODE     ---       #537
+      010019C5H   LINE      CODE     ---       #539
+      010019C7H   LINE      CODE     ---       #543
+      010019C9H   LINE      CODE     ---       #544
+      010019CBH   LINE      CODE     ---       #545
+      010019CCH   LINE      CODE     ---       #546
+      010019CDH   LINE      CODE     ---       #548
+      010019CFH   LINE      CODE     ---       #549
+      010019D1H   LINE      CODE     ---       #555
+      010019D4H   LINE      CODE     ---       #559
+      010019D6H   LINE      CODE     ---       #560
+      010019D7H   LINE      CODE     ---       #561
+      010019D9H   LINE      CODE     ---       #562
+      010019DAH   LINE      CODE     ---       #563
+      010019DCH   LINE      CODE     ---       #564
+      010019DEH   LINE      CODE     ---       #565
+      010019DFH   LINE      CODE     ---       #567
+      010019E2H   LINE      CODE     ---       #571
+      010019E5H   LINE      CODE     ---       #572
+      010019E8H   LINE      CODE     ---       #576
+      010019EAH   LINE      CODE     ---       #577
+      010019EDH   LINE      CODE     ---       #578
+      010019F0H   LINE      CODE     ---       #580
+      010019F2H   LINE      CODE     ---       #581
+LX51 LINKER/LOCATER V4.66.100.0                                                       12/31/2024  15:50:56  PAGE 17
+
+
+      010019F4H   LINE      CODE     ---       #583
+      010019F6H   LINE      CODE     ---       #584
+      010019F7H   LINE      CODE     ---       #585
+      010019F9H   LINE      CODE     ---       #587
+      010019FBH   LINE      CODE     ---       #588
+      010019FDH   LINE      CODE     ---       #594
+      010019FFH   LINE      CODE     ---       #595
+      01001A00H   LINE      CODE     ---       #608
+      01001A01H   LINE      CODE     ---       #609
+      01001A03H   LINE      CODE     ---       #614
+      01001A05H   LINE      CODE     ---       #615
+      01001A07H   LINE      CODE     ---       #616
+      01001A09H   LINE      CODE     ---       #617
+      01001A0BH   LINE      CODE     ---       #618
+      01001A0DH   LINE      CODE     ---       #619
+      01001A0FH   LINE      CODE     ---       #620
+      01001A11H   LINE      CODE     ---       #621
+      01001A13H   LINE      CODE     ---       #622
+      01001A15H   LINE      CODE     ---       #623
+      01001A17H   LINE      CODE     ---       #624
+      01001A19H   LINE      CODE     ---       #625
+      01001A1BH   LINE      CODE     ---       #626
+      01001A1DH   LINE      CODE     ---       #627
+      01001A1FH   LINE      CODE     ---       #628
+      01001A20H   LINE      CODE     ---       #642
+      01001A22H   LINE      CODE     ---       #643
+      01001A24H   LINE      CODE     ---       #644
+      01001A26H   LINE      CODE     ---       #645
+      01001A28H   LINE      CODE     ---       #646
+      01001A29H   LINE      CODE     ---       #647
+      01001A2AH   LINE      CODE     ---       #648
+      01001A2CH   LINE      CODE     ---       #649
+      01001A2EH   LINE      CODE     ---       #650
+      01001A30H   LINE      CODE     ---       #651
+      01001A31H   LINE      CODE     ---       #652
+      01001A33H   LINE      CODE     ---       #653
+      01001A34H   LINE      CODE     ---       #654
+      01001A35H   LINE      CODE     ---       #655
+      01001A36H   LINE      CODE     ---       #656
+      01001A37H   LINE      CODE     ---       #657
+      01001A39H   LINE      CODE     ---       #658
+      01001A3BH   LINE      CODE     ---       #659
+      01001A3DH   LINE      CODE     ---       #660
+      01001A40H   LINE      CODE     ---       #661
+      01001A42H   LINE      CODE     ---       #662
+      01001A43H   LINE      CODE     ---       #663
+      01001A45H   LINE      CODE     ---       #664
+      01001A46H   LINE      CODE     ---       #665
+      01001A47H   LINE      CODE     ---       #666
+      01001A49H   LINE      CODE     ---       #668
+      01001A4CH   LINE      CODE     ---       #670
+      01001A4FH   LINE      CODE     ---       #671
+      01001A52H   LINE      CODE     ---       #672
+      01001A55H   LINE      CODE     ---       #673
+      01001A57H   LINE      CODE     ---       #674
+      01001A59H   LINE      CODE     ---       #675
+      01001A5BH   LINE      CODE     ---       #676
+
+      ---         MODULE    ---      ---       BATTERY
+      0100285CH   PUBLIC    CODE     ---       Battery_Init
+      0100279FH   PUBLIC    CODE     ---       Battery_GPIO_Config
+      01002666H   PUBLIC    CODE     ---       Battery_ADC_Config
+
+      01002666H   BLOCK     CODE     ---       LVL=0
+      01002666H   BLOCK     CODE     NEAR LAB  LVL=1
+LX51 LINKER/LOCATER V4.66.100.0                                                       12/31/2024  15:50:56  PAGE 18
+
+
+      02000013H   SYMBOL    PDATA    VOID      ADC_InitStructure
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100279FH   BLOCK     CODE     ---       LVL=0
+      0100279FH   BLOCK     CODE     NEAR LAB  LVL=1
+      02000013H   SYMBOL    PDATA    VOID      GPIO_InitStructure
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100285CH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+      00000006H   SYMBOL    DATA     VOID      adc_result
+
+      ---         MODULE    ---      ---       BLUETOOTH
+      01002243H   PUBLIC    CODE     ---       Bluetooth_UART_Config
+      010027B2H   PUBLIC    CODE     ---       Bluetooth_GPIO_Config
+
+      010027B2H   BLOCK     CODE     ---       LVL=0
+      010027B2H   BLOCK     CODE     NEAR LAB  LVL=1
+      02000013H   SYMBOL    PDATA    VOID      GPIO_InitStructure
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01002243H   BLOCK     CODE     ---       LVL=0
+      01002243H   BLOCK     CODE     NEAR LAB  LVL=1
+      02000013H   SYMBOL    PDATA    VOID      COMx_InitStructure
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       BUZZER
+      0100273CH   PUBLIC    CODE     ---       Buzzer_Stop
+      01002867H   PUBLIC    CODE     ---       _Buzzer_Play
+      01002847H   PUBLIC    CODE     ---       Buzzer_Init
+      010020ACH   PUBLIC    CODE     ---       _PWM_Config
+      01002789H   PUBLIC    CODE     ---       Buzzer_GPIO_Config
+
+      01002789H   BLOCK     CODE     ---       LVL=0
+      01002789H   BLOCK     CODE     NEAR LAB  LVL=1
+      02000013H   SYMBOL    PDATA    VOID      GPIO_InitStructure
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010020ACH   BLOCK     CODE     ---       LVL=0
+      010020ACH   BLOCK     CODE     NEAR LAB  LVL=1
+      02000045H   SYMBOL    PDATA    VOID      init
+      00000006H   SYMBOL    DATA     VOID      period
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01002847H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01002867H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100273CH   BLOCK     CODE     ---       LVL=0
+      0100273CH   BLOCK     CODE     NEAR LAB  LVL=1
+      02000045H   SYMBOL    PDATA    VOID      init
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       KEY
+      02000091H   PUBLIC    PDATA    BYTE      status
+      02000013H   PUBLIC    PDATA    BYTE      ?_Key_Scan?BYTE
+LX51 LINKER/LOCATER V4.66.100.0                                                       12/31/2024  15:50:56  PAGE 19
+
+
+      010025DCH   PUBLIC    CODE     ---       _Key_Scan
+      0100000EH   PUBLIC    CODE     ---       Key_Init
+
+      0100000EH   BLOCK     CODE     ---       LVL=0
+      0100000EH   BLOCK     CODE     NEAR LAB  LVL=1
+      02000013H   SYMBOL    PDATA    VOID      GPIO_InitStructure
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010025DCH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       LIGHT
+      010027D7H   PUBLIC    CODE     ---       _Light_Off
+      010027C5H   PUBLIC    CODE     ---       _Light_On
+      0100263AH   PUBLIC    CODE     ---       Light_Init
+
+      0100263AH   BLOCK     CODE     ---       LVL=0
+      0100263AH   BLOCK     CODE     NEAR LAB  LVL=1
+      02000013H   SYMBOL    PDATA    VOID      GPIO_InitStructure
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010027C5H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010027D7H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       MOTORS
+      0100248CH   PUBLIC    CODE     ---       _Motors_Translate
+      010026DAH   PUBLIC    CODE     ---       _Motors_Right
+      010026B4H   PUBLIC    CODE     ---       _Motors_Left
+      01000046H   PUBLIC    CODE     ---       _Motors_Forward
+      0100284EH   PUBLIC    CODE     ---       Motors_Init
+      02000054H   PUBLIC    PDATA    BYTE      ?Motors_PWM_Config?BYTE
+      01001E22H   PUBLIC    CODE     ---       Motors_PWM_Config
+      01000003H   PUBLIC    CODE     ---       _Speed2Duty
+      0100268EH   PUBLIC    CODE     ---       Motors_GPIO_Config
+
+      0100268EH   BLOCK     CODE     ---       LVL=0
+      0100268EH   BLOCK     CODE     NEAR LAB  LVL=1
+      02000013H   SYMBOL    PDATA    VOID      GPIO_InitStructure
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000003H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01001E22H   BLOCK     CODE     ---       LVL=0
+      01001E22H   BLOCK     CODE     NEAR LAB  LVL=1
+      02000058H   SYMBOL    PDATA    VOID      LQ_Duty
+      0200005AH   SYMBOL    PDATA    VOID      RQ_Duty
+      0200005CH   SYMBOL    PDATA    VOID      LH_Duty
+      0200005EH   SYMBOL    PDATA    VOID      RH_Duty
+      02000060H   SYMBOL    PDATA    VOID      init
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100284EH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000046H   BLOCK     CODE     ---       LVL=0
+      01000046H   BLOCK     CODE     NEAR LAB  LVL=1
+      02000050H   SYMBOL    PDATA    VOID      ms
+LX51 LINKER/LOCATER V4.66.100.0                                                       12/31/2024  15:50:56  PAGE 20
+
+
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010026B4H   BLOCK     CODE     ---       LVL=0
+      010026B4H   BLOCK     CODE     NEAR LAB  LVL=1
+      02000050H   SYMBOL    PDATA    VOID      ms
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010026DAH   BLOCK     CODE     ---       LVL=0
+      010026DAH   BLOCK     CODE     NEAR LAB  LVL=1
+      02000050H   SYMBOL    PDATA    VOID      ms
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100248CH   BLOCK     CODE     ---       LVL=0
+      0100248CH   BLOCK     CODE     NEAR LAB  LVL=1
+      0200002AH   SYMBOL    PDATA    VOID      ms
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       TRACK
+      0200008FH   PUBLIC    PDATA    INT       last_count
+      01002182H   PUBLIC    CODE     ---       Track_Scan
+      010027E9H   PUBLIC    CODE     ---       Track_Init
+
+      010027E9H   BLOCK     CODE     ---       LVL=0
+      010027E9H   BLOCK     CODE     NEAR LAB  LVL=1
+      02000013H   SYMBOL    PDATA    VOID      GPIO_InitStructure
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01002182H   BLOCK     CODE     ---       LVL=0
+      01002182H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000006H   SYMBOL    DATA     VOID      count
+      00000004H   SYMBOL    DATA     VOID      num
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       ULTRASONIC
+      010021E3H   PUBLIC    CODE     ---       Ultrasonic_GetDistance
+      01002818H   PUBLIC    CODE     ---       Delay100us
+      01002855H   PUBLIC    CODE     ---       Delay10us
+      0100260DH   PUBLIC    CODE     ---       Ultrasonic_Init
+
+      0100260DH   BLOCK     CODE     ---       LVL=0
+      0100260DH   BLOCK     CODE     NEAR LAB  LVL=1
+      02000013H   SYMBOL    PDATA    VOID      GPIO_InitStructure
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01002855H   BLOCK     CODE     ---       LVL=0
+      01002855H   BLOCK     CODE     NEAR LAB  LVL=1
+      0000000EH   SYMBOL    DATA     VOID      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01002818H   BLOCK     CODE     ---       LVL=0
+      01002818H   BLOCK     CODE     NEAR LAB  LVL=1
+      0000000EH   SYMBOL    DATA     VOID      i
+      0000000FH   SYMBOL    DATA     VOID      j
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010021E3H   BLOCK     CODE     ---       LVL=0
+LX51 LINKER/LOCATER V4.66.100.0                                                       12/31/2024  15:50:56  PAGE 21
+
+
+      010021E3H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000006H   SYMBOL    DATA     VOID      count
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       MAIN
+      0200008DH   PUBLIC    PDATA    INT       countA
+      0200007DH   PUBLIC    PDATA    ---       hz
+      0100202EH   PUBLIC    CODE     ---       task_track
+      010022A0H   PUBLIC    CODE     ---       task_buzzer
+      01002117H   PUBLIC    CODE     ---       task_Ultrasonic
+      010026FFH   PUBLIC    CODE     ---       task_key
+      01002862H   PUBLIC    CODE     ---       up
+      01002825H   PUBLIC    CODE     ---       down
+      01002758H   PUBLIC    CODE     ---       task_led
+      0100283EH   PUBLIC    CODE     ---       task_bt
+      01002772H   PUBLIC    CODE     ---       task_main
+      01000026H   PUBLIC    CODE     ---       sys_config
+
+      01000026H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01002772H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100283EH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01002758H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01002825H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01002862H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010026FFH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01002117H   BLOCK     CODE     ---       LVL=0
+      01002117H   BLOCK     CODE     NEAR LAB  LVL=1
+      02000026H   SYMBOL    PDATA    VOID      distance
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010022A0H   BLOCK     CODE     ---       LVL=0
+      010022A0H   BLOCK     CODE     NEAR LAB  LVL=1
+      02000043H   SYMBOL    PDATA    VOID      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100202EH   BLOCK     CODE     ---       LVL=0
+      0100202EH   BLOCK     CODE     NEAR LAB  LVL=1
+      0200004EH   SYMBOL    PDATA    VOID      count
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       ?RTX51_TINY_OS_CREATE
+      01001A5DH   PUBLIC    CODE     ---       _OS_CREATE_TASK
+
+      ---         MODULE    ---      ---       ?RTX51_TINY_OS_DELETE
+      01001AE6H   PUBLIC    CODE     ---       _OS_DELETE_TASK
+
+      ---         MODULE    ---      ---       ?RTX51_TINY_OS_WAIT
+LX51 LINKER/LOCATER V4.66.100.0                                                       12/31/2024  15:50:56  PAGE 22
+
+
+      01001B6FH   PUBLIC    CODE     ---       _OS_WAIT
+      01001B6FH   PUBLIC    CODE     ---       _OS_WAIT1
+      01001B6FH   PUBLIC    CODE     ---       _OS_WAIT2
+
+      ---         MODULE    ---      ---       ?C?FPMUL
+      01000096H   PUBLIC    CODE     ---       ?C?FPMUL
+
+      ---         MODULE    ---      ---       ?C?FPDIV
+      0100019FH   PUBLIC    CODE     ---       ?C?FPDIV
+
+      ---         MODULE    ---      ---       ?C?FPCMP
+      0100023EH   PUBLIC    CODE     ---       ?C?FPCMP
+      0100023CH   PUBLIC    CODE     ---       ?C?FPCMP3
+
+      ---         MODULE    ---      ---       ?C?FCAST
+      010002BFH   PUBLIC    CODE     ---       ?C?FCASTC
+      010002BAH   PUBLIC    CODE     ---       ?C?FCASTI
+      010002B5H   PUBLIC    CODE     ---       ?C?FCASTL
+
+      ---         MODULE    ---      ---       ?C?CASTF
+      010002F3H   PUBLIC    CODE     ---       ?C?CASTF
+
+      ---         MODULE    ---      ---       PRINTF
+      0200002AH   PUBLIC    PDATA    ---       ?_PRINTF?BYTE
+      0200002AH   PUBLIC    PDATA    ---       ?_SPRINTF?BYTE
+      010010CDH   PUBLIC    CODE     ---       _PRINTF
+      010010C7H   PUBLIC    CODE     ---       _SPRINTF
+
+      ---         MODULE    ---      ---       ?C?FPGETOPN
+      0100032AH   PUBLIC    CODE     ---       ?C?FPGETOPN2
+      0100035FH   PUBLIC    CODE     ---       ?C?FPNANRESULT
+      01000369H   PUBLIC    CODE     ---       ?C?FPOVERFLOW
+      01000341H   PUBLIC    CODE     ---       ?C?FPRESULT
+      01000355H   PUBLIC    CODE     ---       ?C?FPRESULT2
+      01000366H   PUBLIC    CODE     ---       ?C?FPUNDERFLOW
+
+      ---         MODULE    ---      ---       ?C?FPROUND
+      01000374H   PUBLIC    CODE     ---       ?C?FPROUND
+
+      ---         MODULE    ---      ---       ?C?FPCONVERT
+      010003A3H   PUBLIC    CODE     ---       ?C?FPCONVERT
+
+      ---         MODULE    ---      ---       ?C?FPADD
+      010004ADH   PUBLIC    CODE     ---       ?C?FPADD
+      010004A9H   PUBLIC    CODE     ---       ?C?FPSUB
+
+      ---         MODULE    ---      ---       ?C?FTNPWR
+      010005CEH   PUBLIC    CODE     ---       ?C?FTNPWR
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+      01000000H   PUBLIC    CODE     ---       ?C_STARTUP
+
+      ---         MODULE    ---      ---       ?C?COPY
+      010006DEH   PUBLIC    CODE     ---       ?C?COPY
+
+      ---         MODULE    ---      ---       ?C?CLDPTR
+      01000704H   PUBLIC    CODE     ---       ?C?CLDPTR
+
+      ---         MODULE    ---      ---       ?C?CLDOPTR
+      0100071DH   PUBLIC    CODE     ---       ?C?CLDOPTR
+
+      ---         MODULE    ---      ---       ?C?CSTPTR
+      0100074AH   PUBLIC    CODE     ---       ?C?CSTPTR
+
+      ---         MODULE    ---      ---       ?C?IMUL
+LX51 LINKER/LOCATER V4.66.100.0                                                       12/31/2024  15:50:56  PAGE 23
+
+
+      0100075CH   PUBLIC    CODE     ---       ?C?IMUL
+
+      ---         MODULE    ---      ---       ?C?SIDIV
+      0100076EH   PUBLIC    CODE     ---       ?C?SIDIV
+
+      ---         MODULE    ---      ---       ?C?ILDPTR
+      010007A4H   PUBLIC    CODE     ---       ?C?ILDPTR
+
+      ---         MODULE    ---      ---       ?C?ILDOPTR
+      010007CFH   PUBLIC    CODE     ---       ?C?ILDOPTR
+
+      ---         MODULE    ---      ---       ?C?LMUL
+      01000807H   PUBLIC    CODE     ---       ?C?LMUL
+
+      ---         MODULE    ---      ---       ?C?ULDIV
+      01000892H   PUBLIC    CODE     ---       ?C?ULDIV
+
+      ---         MODULE    ---      ---       ?C?SLDIV
+      010024D3H   PUBLIC    CODE     ---       ?C?SLDIV
+
+      ---         MODULE    ---      ---       ?C?LNEG
+      01000924H   PUBLIC    CODE     ---       ?C?LNEG
+
+      ---         MODULE    ---      ---       ?C?ULCMP
+      01000932H   PUBLIC    CODE     ---       ?C?ULCMP
+
+      ---         MODULE    ---      ---       ?C?ULSHR
+      01000943H   PUBLIC    CODE     ---       ?C?ULSHR
+
+      ---         MODULE    ---      ---       ?C?LLDOPTR0
+      01000956H   PUBLIC    CODE     ---       ?C?LLDOPTR0
+
+      ---         MODULE    ---      ---       ?C?LSTPDATA
+      01000986H   PUBLIC    CODE     ---       ?C?LSTPDATA
+
+      ---         MODULE    ---      ---       ?C?LSTKPDATA
+      01000992H   PUBLIC    CODE     ---       ?C?LSTKPDATA
+
+      ---         MODULE    ---      ---       ?C?PLDIPDATA
+      010009ABH   PUBLIC    CODE     ---       ?C?PLDIPDATA
+
+      ---         MODULE    ---      ---       ?C?PSTPDATA
+      010009BBH   PUBLIC    CODE     ---       ?C?PSTPDATA
+
+      ---         MODULE    ---      ---       ?C?CCASE
+      010009C4H   PUBLIC    CODE     ---       ?C?CCASE
+
+      ---         MODULE    ---      ---       ?C?ICALL
+      010009EAH   PUBLIC    CODE     ---       ?C?ICALL
+      010009EEH   PUBLIC    CODE     ---       ?C?ICALL2
+
+      ---         MODULE    ---      ---       ?C_INIT
+      01001FE9H   PUBLIC    CODE     ---       ?C_START
+
+      ---         MODULE    ---      ---       ?C?UIDIV
+      010009F0H   PUBLIC    CODE     ---       ?C?UIDIV
+
+      ---         MODULE    ---      ---       ?C?LLDIDATA0
+      01000A45H   PUBLIC    CODE     ---       ?C?LLDIDATA0
+
+      ---         MODULE    ---      ---       ?C?LLDXDATA0
+      01000A52H   PUBLIC    CODE     ---       ?C?LLDXDATA0
+
+      ---         MODULE    ---      ---       ?C?LLDPDATA0
+      01000A5EH   PUBLIC    CODE     ---       ?C?LLDPDATA0
+LX51 LINKER/LOCATER V4.66.100.0                                                       12/31/2024  15:50:56  PAGE 24
+
+
+
+      ---         MODULE    ---      ---       ?C?LLDCODE0
+      01000A6BH   PUBLIC    CODE     ---       ?C?LLDCODE0
+
+Program Size: data=45.2 xdata=850 const=6 code=10345
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

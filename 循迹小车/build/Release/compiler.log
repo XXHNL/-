@@ -1,0 +1,14 @@
+>>> cc
+
+
+
+>>> ld
+
+
+LX51 LINKER/LOCATER V4.66.100.0 - SN: K1DZC-MJF4MC
+COPYRIGHT Copyright (C) 1995-2021, Arm Limited or its Affiliates. All rights reserved.
+@e:\单片机\循迹小车\build\Release\循迹小车.lnp .\build\Release\.obj\src\Lib\ADC.o,.\build\Release\.obj\src\Lib\GPIO.o,.\build\Release\.obj\src\Lib\NVIC.o,.\build\Release\.obj\src\Lib\STC8H_PWM.o,.\build\Release\.obj\src\Lib\UART.o,.\build\Release\.obj\src\Lib\UART_Isr.o,.\build\Release\.obj\src\OS\Conf_tny.o,.\build\Release\.obj\src\driver\Battery.o,.\build\Release\.obj\src\driver\Bluetooth.o,.\build\Release\.obj\src\driver\Buzzer.o,.\build\Release\.obj\src\driver\Key.o,.\build\Release\.obj\src\driver\Light.o,.\build\Release\.obj\src\driver\Motors.o,.\build\Release\.obj\src\driver\Track.o,.\build\Release\.obj\src\driver\Ultrasonic.o,.\build\Release\.obj\src\main.o TO .\build\Release\循迹小车
+PRINT(.\build\Release\循迹小车.map) Rtx51Tiny REMOVEUNUSED DISABLEWARNING(15,16)
+
+Program Size: data=45.2 xdata=850 const=6 code=10345
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
